@@ -1,0 +1,131 @@
+/* Configurações básicas para empurrar o rodapé para baixo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Faz o corpo ter o tamanho da tela cheia */
+    background-color: #ffffff;
+}
+
+.conteudo {
+    flex: 1; /* Ocupa todo o espaço do meio, empurrando o rodapé para baixo */
+}
+
+/* --- ESTILO DO TOPO --- */
+.topo {
+    background-color: #0b1426;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo strong {
+    font-size: 14px;
+}
+
+.logo span {
+    font-size: 11px;
+    color: #a0aec0;
+}
+
+.menu a {
+    color: #cbd5e0;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.menu a:hover, .menu a.ativo {
+    color: #ffffff;
+}
+
+.botao {
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #ffffff;
+    padding: 8px 15px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.botao:hover {
+    background-color: #ffffff;
+    color: #0b1426;
+}
+
+/* --- ESTILO DO RODAPÉ --- */
+.rodape {
+    background-color: #0b1426;
+    color: #ffffff;
+    padding: 40px 40px 20px 40px;
+    font-size: 13px;
+}
+
+.colunas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.coluna h4 {
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.coluna a {
+    color: #a0aec0;
+    text-decoration: none;
+}
+
+.coluna a:hover {
+    color: #ffffff;
+}
+
+.coluna p {
+    color: #a0aec0;
+    margin-bottom: 5px;
+}
+
+/* Formulário simples */
+.formulario input {
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #718096;
+    color: white;
+}
+
+.formulario button {
+    padding: 6px;
+    background: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Linha final de direitos */
+.direitos {
+    border-top: 1px solid #1a202c;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: #718096;
+    font-size: 11px;
+}
+
+.direitos a {
+    color: #718096;
+    text-decoration: none;
+}
