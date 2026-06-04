@@ -1,23 +1,53 @@
+
+:root {
+    --cor-primaria: #0b1426;
+    --cor-secundaria: #1e293b;
+    --cor-destaque: #3b82f6;
+    --cor-destaque-hover: #2563eb;
+
+    --branco: #ffffff;
+    --cinza-claro: #cbd5e0;
+    --cinza-medio: #a0aec0;
+    --cinza-escuro: #718096;
+
+    --fundo-claro: #f8fafc;
+
+    --sucesso: #22c55e;
+    --aviso: #f59e0b;
+    --erro: #ef4444;
+}
+
 /* Configurações básicas para empurrar o rodapé para baixo */
+
+
 * {
     margin: 0;
     padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition:  0.2s linear;
     box-sizing: border-box;
     font-family: sans-serif;
+
+    
 }
+
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Faz o corpo ter o tamanho da tela cheia */
-    background-color: #ffffff;
+    background-color: var(--fundo-principal);
 }
 
 .conteudo {
     flex: 1; /* Ocupa todo o espaço do meio, empurrando o rodapé para baixo */
+    
 }
 
-/* --- ESTILO DO TOPO --- */
+/* --- ESTILO  TOPO --- */
 .topo {
     background-color: #0b1426;
     padding: 20px 40px;
@@ -67,7 +97,103 @@ body {
     color: #0b1426;
 }
 
-/* --- ESTILO DO RODAPÉ --- */
+
+
+
+/*  ESTILO CONTEUDO PRINCIPAL(HOME SCREEN) */
+
+
+
+.botao{
+    background-color: var(--cor-destaque);
+    padding: 1rem 3rem;
+    font-size: 0.6rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    padding-left: 3rem;
+    margin-left: 100px;
+}
+
+.botao:hover{
+ letter-spacing: 0.1rem;
+}
+
+.home-container{
+    background-image: url("./IMG/FUNDO.png");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+
+.home-container section{
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+
+}
+
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+   
+}
+.icones-rpt {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  right: 250px;
+  position: relative;
+}
+
+.icones-rpt img {
+  width: 600px;
+  max-width: 100%;
+
+}
+
+.content{
+    max-width: 60rem;
+    flex: 1;
+}
+
+.content h3.principal {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #0b1426;
+    margin-left: 100px;
+}
+
+.content h3.secundario {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.456rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #0b1426;
+    margin-left: 100px;
+}
+
+.content p{
+    font-size: 1rem;
+    color: var(--cinza-escuro);
+    font-weight: 100;
+    line-height: 1.3;
+    padding: 1rem 0;
+    margin-left: 100px;
+   
+}
+
+
+
+
+/* --- ESTILO RODAPÉ --- */
 .rodape {
     background-color: #0b1426;
     color: #ffffff;
@@ -100,7 +226,11 @@ body {
     margin-bottom: 5px;
 }
 
-/* Formulário simples */
+
+
+
+
+/* Formulário*/
 .formulario input {
     padding: 6px;
     background: rgba(255, 255, 255, 0.1);
@@ -115,7 +245,7 @@ body {
     cursor: pointer;
 }
 
-/* Linha final de direitos */
+/* footer */
 .direitos {
     border-top: 1px solid #1a202c;
     padding-top: 15px;
