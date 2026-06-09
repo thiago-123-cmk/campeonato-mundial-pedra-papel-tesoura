@@ -1286,7 +1286,6 @@ body {
 
 .camp-check label a { color: var(--cor-destaque); text-decoration: underline; }
 
-/* botão */
 .btn-inscrever {
   display: flex;
 
@@ -1389,7 +1388,7 @@ body {
 
 
 
-/* Formulário*/
+
 .formulario input {
     padding: 6px;
 
