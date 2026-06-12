@@ -3,624 +3,406 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Campeonato Mundial de PPT</title>
     <link rel="stylesheet" href="styles.css">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
 
-
-        <!-- NAV-BAR E MENU HEADER -->
-
-
-    <header class="topo">
+    <!-- NAV-BAR -->
+    <header class="topo" id="topo">
         <div class="logo">
             <img src="./IMG/logoreal11.png" alt="Logo do Campeonato Mundial de Pedra, Papel e Tesoura">
         </div>
-        
         <nav class="menu">
-            <a href="#inicio" >INÍCIO</a>
-            <a href="#sobre" >SOBRE</a>
+            <a href="#inicio">INÍCIO</a>
+
+            <a href="#sobre">SOBRE</a>
+
             <a href="#campeonato">CAMPEONATO</a>
-            <a href="#regras">REGRAS</a>
+
+            <a href="#arena">ARENA AO VIVO</a>
+
             <a href="#noticias">NOTÍCIAS</a>
+
             <a href="#formulario">FORMULÁRIO</a>
+
             <a href="#contato">CONTATO</a>
         </nav>
-
-        <a href="#inscreva-se" class="botao">INSCREVA-SE</a>    
+        <a href="#formulario" class="botao">INSCREVA-SE</a>
     </header>
-
-
-    
-
-    <!-- PAGINA PRINCIPAL OU HERO SCREEN -->
-
 
     <main class="conteudo">
 
+        <!-- HERO -->
         <div class="home-container">
-
             <section id="inicio" class="home">
-
                 <div class="content">
-                <h3 class="principal">CAMPEONATO MUNDIAL</h3>
-                <h3 class="secundario">DE PEDRA, PAPEL E TESOURA</h3>
-                <p>Prepare-se para competir com os melhores jogadores e <br>conquistar o título de campeão mundial.</p>
-                <a href="#noticias" class="botao-home">SAIBA MAIS</a>
+                    <h3 class="principal">CAMPEONATO MUNDIAL</h3>
+                    <h3 class="secundario">DE PEDRA, PAPEL E TESOURA</h3>
+                    <p>Prepare-se para competir com os melhores jogadores e <br>conquistar o título de campeão mundial.</p>
+                    <a href="#noticias" class="botao-home">SAIBA MAIS</a>
+                </div>
+                <div class="icones-rpt">
+                    <img src="./IMG/MAOS-removebg-preview.png" alt="Pedra Papel Tesoura">
+                </div>
+            </section>
+        </div>
+
+        <!-- CARDS SOBRE -->
+        <section id="sobre" class="sobre">
+            <div class="box-container">
+                <div class="box">
+                    <h2>SOBRE O CAMPEONATO</h2>
+                    <p>O Campeonato Mundial de Pedra, Papel e Tesoura é o evento mais aguardado do ano para os fãs do jogo. Este evento reúne os melhores jogadores de todo o mundo para competir pelo título de campeão mundial. Com uma história rica e uma comunidade apaixonada, o campeonato é uma celebração da habilidade, estratégia e diversão.</p>
+                    <a href="#contato" class="botao-card">CONHEÇA MAIS</a>
                 </div>
 
-                  <div class="icones-rpt">
-        <img src="./IMG/MAOS-removebg-preview.png" alt="Pedra Papel Tesoura">
-    </div>
+                <div class="box">
+                    <h2>PRÓXIMOS JOGOS</h2>
+                    <div class="jogo">
+                        <span><img src="./IMG/bandeiradobrasil-2-cke.png" alt="" class="bandeira">🇧🇷 Brasil</span>
+                        <span>VS</span>
+                        <span><img src="./IMG/41QEnbMEodL._AC_UF894,1000_QL80_.jpg" alt="" class="bandeira">🇯🇵 Japão</span>
+                    </div>
+                    <div class="jogo">
+                        <span><img src="./IMG/bandeira_americana_bb.png" alt="" class="bandeira">🇺🇸 EUA</span>
+                        <span>VS</span>
+                        <span><img src="./IMG/Flag_of_Germany.svg.png" alt="" class="bandeira">🇩🇪 Alemanha</span>
+                    </div>
+                    <div class="jogo">
+                        <span><img src="./IMG/frança.png" alt="" class="bandeira">🇫🇷 França</span>
+                        <span>VS</span>
+                        <span><img src="./IMG/bandeira-da-espanha-og.png" alt="" class="bandeira">🇪🇸 Espanha</span>
+                    </div>
+                    <a href="#" class="botao-card">VER TODOS OS JOGOS</a>
+                </div>
 
-            </section>
-
-        </div>
-
-
-        
-
-
-
-
-        <!-- CARDS DO CAMPEONATO -->
-         
-
-       <section id="sobre" class="sobre">
-
-    <div class="box-container">
-
-        <!-- CARD 1 -->
-        <div class="box">
-            <h2>SOBRE O CAMPEONATO</h2>
-
-            <p>
-                O Campeonato Mundial de Pedra, Papel e Tesoura é o evento mais aguardado
-                do ano para os fãs do jogo.Este evento reúne os melhores jogadores de todo o mundo para competir pelo título de campeão mundial. Com uma história rica e uma comunidade apaixonada, o campeonato é uma celebração da habilidade, estratégia e diversão que o jogo proporciona.
-            </p>
-
-            <a href="#contato" class="botao-card">CONHEÇA MAIS</a>
-        </div>
-
-
-
-
-        <!-- CARD 2 -->
-        <div class="box">
-
-            <h2>PRÓXIMOS JOGOS</h2>
-
-            <div class="jogo">
-                <span>
-                <img src="./IMG/bandeiradobrasil-2-cke.png" alt="" class="bandeira">
-                🇧🇷 Brasil</span>
-
-                <span>VS</span>
-
-                <span>
-                <img src="./IMG/41QEnbMEodL._AC_UF894,1000_QL80_.jpg" alt="" class="bandeira">
-                🇯🇵 Japão</span>
+                <div class="box">
+                    <h2>RANKING MUNDIAL</h2>
+                    <div class="ranking-item">
+                        <span><img src="./IMG/bandeiradobrasil-2-cke.png" alt="" class="bandeira">1 🇧🇷 João Silva</span>
+                        <strong>2850</strong>
+                    </div>
+                    <div class="ranking-item">
+                        <span><img src="./IMG/Flag_of_South_Korea.svg.png" alt="" class="bandeira">2 🇰🇷 Minseo Kim</span>
+                        <strong>2450</strong>
+                    </div>
+                    <div class="ranking-item">
+                        <span><img src="./IMG/bandeira_americana_bb.png" alt="" class="bandeira">3 🇺🇸 David Smith</span>
+                        <strong>2150</strong>
+                    </div>
+                    <div class="ranking-item">
+                        <span><img src="./IMG/bandeira-da-espanha-og.png" alt="" class="bandeira">4 🇪🇸 Carlos Ruiz</span>
+                        <strong>1930</strong>
+                    </div>
+                    <div class="ranking-item">
+                        <span><img src="./IMG/Flag_of_Germany.svg.png" alt="" class="bandeira">5 🇩🇪 Anna Müller</span>
+                        <strong>1870</strong>
+                    </div>
+                    <a href="#" class="botao-card">VER RANKING COMPLETO</a>
+                </div>
             </div>
-
-            <div class="jogo">
-                <span>
-                    <img src="./IMG/bandeira_americana_bb.png" alt="" class="bandeira">
-                    🇺🇸 EUA</span>
-                <span>VS</span>
-                <span>
-                    <img src="./IMG/Flag_of_Germany.svg.png" alt="" class="bandeira">
-                    🇩🇪 Alemanha</span>
-            </div>
-
-            <div class="jogo">
-                <span>
-                    <img src="./IMG/frança.png" alt="" class="bandeira">
-                    🇫🇷 França</span>
-                <span>VS</span>
-                <span>
-                    <img src="./IMG/bandeira-da-espanha-og.png" alt="" class="bandeira">
-                    🇪🇸 Espanha</span>
-            </div>
-
-            <a href="#" class="botao-card">VER TODOS OS JOGOS</a>
-
-        </div>
-
-
-
-
-
-
-        <!-- CARD 3 -->
-        <div class="box">
-
-            <h2>RANKING MUNDIAL</h2>
-
-            <div class="ranking-item">
-                <span>
-                    <img src="./IMG/bandeiradobrasil-2-cke.png" alt="" class="bandeira">
-                    1 🇧🇷 João Silva</span>
-                <strong>2850</strong>
-            </div>
-
-            <div class="ranking-item">
-                <span>
-                    <img src="./IMG/Flag_of_South_Korea.svg.png" alt="" class="bandeira">
-                    2 🇰🇷 Minseo Kim</span>
-                <strong>2450</strong>
-            </div>
-
-            <div class="ranking-item">
-                <span>
-                    <img src="./IMG/bandeira_americana_bb.png" alt="" class="bandeira">
-                    3 🇺🇸 David Smith</span>
-                <strong>2150</strong>
-            </div>
-
-            <div class="ranking-item">
-                <span>
-                    <img src="./IMG/bandeira-da-espanha-og.png" alt="" class="bandeira">
-                    4 🇪🇸 Carlos Ruiz</span>
-                <strong>1930</strong>
-            </div>
-
-            <div class="ranking-item">
-                <span>
-                    <img src="./IMG/Flag_of_Germany.svg.png" alt="" class="bandeira">
-                    5 🇩🇪 Anna Müller</span>
-                <strong>1870</strong>
-            </div>
-
-            <a href="#" class="botao-card">VER RANKING COMPLETO</a>
-
-        </div>
-
-
-
-
-    </div>
-
-</section>
-
-
-
-
-
-        <!-- Pagina de como funciona o campeonato -->
-            
-
-    <div class="campeonato-container" id="campeonato">
-
-    <!-- LADO ESQUERDO -->
-    <div class="inscricao">
-
-        <h2>COMO PARTICIPAR</h2>
-
-        <p>
-            Para participar do Campeonato Mundial de Pedra, Papel e Tesoura,
-            siga os passos abaixo:
-        </p>
-
-        <ul>
-            <li>Preencha o formulário de inscrição.</li>
-            <li>Informe seus dados pessoais.</li>
-            <li>Escolha seu nome de competidor.</li>
-            <li>Aceite os termos de uso.</li>
-            <li>Aguarde a confirmação por e-mail.</li>
-        </ul>
-
-        <!-- ESTATÍSTICAS AQUI DENTRO -->
-        <div class="estatisticas">
-
-            <div class="stat">
-                <h4>01</h4>
-                <span>CADASTRO</span>
-            </div>
-
-            <div class="stat">
-                <h4>02</h4>
-                <span>CLASSIFICATÓRIAS</span>
-            </div>
-
-            <div class="stat">
-                <h4>03</h4>
-                <span>ELIMINATÓRIAS</span>
-            </div>
-
-            <div class="stat">
-                <h4>04</h4>
-                <span>GRANDE FINAL</span>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- LADO DIREITO -->
-    <div class="modelo-3d">
-        <spline-viewer url="https://prod.spline.design/BehwzxjrL-8uZ4m8/scene.splinecode"></spline-viewer>
-    </div>
-
-</div>
-
-        <!-- SEÇÃO QUE SOMOS -->
-
-
-     <section class="quem-somos" id="quem-somos">
-
-    <div class="quem-somos-container">
-
-        <div class="quem-somos-texto">
-
-            <h2>QUEM SOMOS</h2>
-
-            <p>
-                Somos uma equipe apaixonada por tecnologia, design e inovação.
-                Este projeto foi desenvolvido com o objetivo de criar uma experiência
-                moderna e interativa para o Campeonato Mundial de Pedra, Papel e Tesoura.
-            </p>
-
-            <p>
-                Nossa equipe foi responsável pelo planejamento, desenvolvimento,
-                design e implementação de todas as funcionalidades presentes no site.
-            </p>
-
-        </div>
-
-        <div class="quem-somos-imagem">
-
-            <!-- SUA FOTO AQUI -->
-            <img src="IMG/WhatsApp Image 2026-06-10 at 13.14.11.jpeg" alt="Nossa equipe">
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-
-
-
-
-    <!-- SEÇÃO AVALIAÇÕES -->
-
-
-
-    <section class="avaliacoes">
-        
-        <div class="avaliacao-item">
-
-            <h3>$250M</h3>
-            <p>PREMIAÇÃO TOTAL</p>
-
-        </div>
-
-        <div class="avaliacao-item">
-
-            <h3>100+</h3>
-            <p>PAÍSES PARTICIPANTES</p>
-        </div>
-
-        <div class="avaliacao-item">
-
-            <h3>5000+</h3>
-            <p>JOGADORES INSCRITOS</p>
-        </div>
-         
-        <div class="avaliacao-item">
-    
-            <h3>20</h3>
-            <p>ANOS DE HISTÓRIA</p>
-
-         </div>
-         
-    </section>
-
-
-    
-
-    <!-- AREA NOTICIAS -->
-
-
-   
-    <section class="noticias" id="noticias" id="regras">
-  <div class="accent-bar"></div>
-
-  <div class="noticias__inner">
-
-    <div class="noticias__hero">
-
-      <article class="noticias__principal">
-        <img src="IMG/imgFRANCA-noticias.png" alt="Campeonato 2026 nos EUA e França">
-
-        <div class="noticias__principal-content">
-          <div class="badge-new">
-            <span class="dot"></span> NOVO
-          </div>
-
-          <h1>
-            O campeonato de 2026<br>
-            será realizado nos<br>
-            Estados Unidos e França
-          </h1>
-
-          <p>
-            Cidade espera receber cerca de 6,5 milhões de turistas durante o evento.
-          </p>
-
-          <a href="#" class="btn-continuar">
-            Continuar lendo
-            <span class="arrow">→</span>
-          </a>
-        </div>
-
-      </article>
-
-      <aside class="noticias__lateral">
-
-        <div class="noticias__lateral-header">
-
-          <p>Notícias Populares</p>
-        </div>
-
-        <a href="#" class="lateral-item">
-
-          <div class="lateral-item__text">
-
-            <h3>Quem será o campeão<br>deste ano?</h3>
-
-            <span>15 artigos</span>
-          </div>
-          <span class="lateral-item__arrow">→</span>
-        </a>
-
-        <a href="#" class="lateral-item">
-
-          <div class="lateral-item__text">
-
-            <h3>Presidente Robson confirma<br>novos investimentos</h3>
-
-            <span>12 artigos</span>
-          </div>
-          <span class="lateral-item__arrow">→</span>
-        </a>
-
-        <a href="#" class="lateral-item">
-          <div class="lateral-item__text">
-
-            <h3>CBF divulga horários<br>dos jogos da seleção</h3>
-
-            <span>8 artigos</span>
-
-          </div>
-          
-          <span class="lateral-item__arrow">→</span>
-        </a>
-      </aside>
-
-    </div>
-
-
-    <div class="trending-header">
-      <h2>Trending <span>News</span></h2>
-
-      <a href="#">Ver tudo →</a>
-
-    </div>
-
-
-    <div class="trending-grid">
-
-
-      <a href="#" class="card-trending">
-        <img class="card-trending__img" src="IMG/lesao.jpeg" alt="João Silva sofre lesão">
-        <div class="card-trending__body">
-
-          <h4>João Silva sofre lesão e preocupa torcida</h4>
-
-          <p>A seleção aguarda o diagnóstico completo antes do torneio.</p>
-        </div>
-      </a>
-
-      <a href="#" class="card-trending">
-        <img class="card-trending__img" src="IMG/regra.jpg" alt="Novas regras 2026">
-        <div class="card-trending__body">
-
-
-          <h4>Novas regras são aprovadas para 2026</h4>
-          <p>Federação anuncia mudanças no formato de disputa do campeonato.</p>
-        </div>
-      </a>
-
-      <a href="#" class="card-trending">
-        <img class="card-trending__img" src="IMG/japa.png" alt="Japão anuncia convocação">
-        <div class="card-trending__body">
-
-          <h4>Japão anuncia convocação oficial</h4>
-
-          <p>Lista com 18 atletas foi divulgada nesta manhã pela federação.</p>
-        </div>
-      </a>
-
-    </div>
-
-  </div>
-</section>
-
-
-
-
-
-
-
-
-            <!-- SEÇÃO FORMULÁRIO ETAPA FINAL DO NOSSO SITE -->
         </section>
+
+
+
+
+        
+        <!-- CAMPEONATO -->
+        <div class="campeonato-container" id="campeonato">
+            <div class="inscricao">
+                <h2>COMO PARTICIPAR</h2>
+                <p>Para participar do Campeonato Mundial de Pedra, Papel e Tesoura, siga os passos abaixo:</p>
+                <ul>
+                    <li>Preencha o formulário de inscrição.</li>
+
+                    <li>Informe seus dados pessoais.</li>
+
+                    <li>Escolha seu nome de competidor.</li>
+
+                    <li>Aceite os termos de uso.</li>
+
+                    <li>Aguarde a confirmação por e-mail.</li>
+                </ul>
+                <div class="estatisticas">
+                    <div class="stat"><h4>01</h4><span>CADASTRO</span></div>
+
+                    <div class="stat"><h4>02</h4><span>CLASSIFICATÓRIAS</span></div>
+
+                    <div class="stat"><h4>03</h4><span>ELIMINATÓRIAS</span></div>
+
+                    <div class="stat"><h4>04</h4><span>GRANDE FINAL</span></div>
+                </div>
+            </div>
+            <div class="modelo-3d">
+                <spline-viewer url="https://prod.spline.design/BehwzxjrL-8uZ4m8/scene.splinecode"></spline-viewer>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!-- QUEM SOMOS -->
+        <section class="quem-somos" id="quem-somos">
+            <div class="quem-somos-container">
+                <div class="quem-somos-texto">
+                    <h2>QUEM SOMOS</h2>
+                    <p>SOMOS UMA EQUIPE DE TECNOLOGIA APAIXONADOS POR TECNOLOGIA E FIGMA. NOSSO PROJETO FOI DESENVOLVIDO PARA CRIAR UMA IMERSÃO GIGANTE PARA OS COMPETIDORES E VISITANTES DO LOCAL.</p>
+                    <p>NOSSA EQUIPE FOI RESPONSÁVEL PELO PLANEJAMENTO, DESENVOLVIMENTO, DESIGN E IMPLEMENTAÇÃO DE TODAS AS FUNCIONALIDADES PRESENTES NO SITE.</p>
+                </div>
+                <div class="quem-somos-imagem">
+                    <img src="IMG/WhatsApp Image 2026-06-10 at 13.14.11.jpeg" alt="Nossa equipe">
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- AVALIAÇÕES E NÚMEROS -->
+        <section class="avaliacoes" id="avaliacoes">
+            <div class="avaliacao-item" data-count="250" data-suffix="M+">
+                <h3 class="counter-num">$0</h3>
+                <p>PREMIAÇÃO TOTAL</p>
+            </div>
+            <div class="avaliacao-item" data-count="100" data-suffix="+">
+                <h3 class="counter-num">0</h3>
+                <p>PAÍSES PARTICIPANTES</p>
+            </div>
+            <div class="avaliacao-item" data-count="5000" data-suffix="+">
+                <h3 class="counter-num">0</h3>
+                <p>JOGADORES INSCRITOS</p>
+            </div>
+            <div class="avaliacao-item" data-count="20" data-suffix="">
+                <h3 class="counter-num">0</h3>
+                <p>ANOS DE HISTÓRIA</p>
+            </div>
+        </section>
+
+
+
+        <!-- NOTÍCIAS -->
+        <section class="noticias" id="noticias" >
+            <div class="accent-bar"></div>
+            <div class="noticias__inner">
+                <div class="noticias__hero">
+                    <article class="noticias__principal">
+                        <img src="IMG/imgFRANCA-noticias.png" alt="Campeonato 2026 nos EUA e França">
+                        <div class="noticias__principal-content">
+                            <div class="badge-new"><span class="dot"></span> NOVO</div>
+                            <h1>O campeonato de 2026<br>será realizado nos<br>Estados Unidos e França</h1>
+                            <p>Cidade espera receber cerca de 6,5 milhões de turistas durante o evento.</p>
+                            <a href="#" class="btn-continuar">Continuar lendo<span class="arrow">→</span></a>
+                        </div>
+                    </article>
+                    <aside class="noticias__lateral">
+                        <div class="noticias__lateral-header"><p>Notícias Populares</p></div>
+                        <a href="#" class="lateral-item">
+                            <div class="lateral-item__text"><h3>Quem será o campeão<br>deste ano?</h3><span>15 artigos</span></div>
+                            <span class="lateral-item__arrow">→</span>
+                        </a>
+                        <a href="#" class="lateral-item">
+                            <div class="lateral-item__text"><h3>Presidente Robson confirma<br>novos investimentos</h3><span>12 artigos</span></div>
+                            <span class="lateral-item__arrow">→</span>
+                        </a>
+                        <a href="#" class="lateral-item">
+                            <div class="lateral-item__text"><h3>CBF divulga horários<br>dos jogos da seleção</h3><span>8 artigos</span></div>
+                            <span class="lateral-item__arrow">→</span>
+                        </a>
+                    </aside>
+                </div>
+                <div class="trending-header">
+                    <h2>Trending <span>News</span></h2>
+                    <a href="#">Ver tudo →</a>
+                </div>
+                <div class="trending-grid">
+                    <a href="#" class="card-trending">
+                        <img class="card-trending__img" src="IMG/lesao.jpeg" alt="">
+                        <div class="card-trending__body"><h4>João Silva sofre lesão e preocupa torcida</h4><p>A seleção aguarda o diagnóstico completo antes do torneio.</p></div>
+                    </a>
+                    <a href="#" class="card-trending">
+                        <img class="card-trending__img" src="IMG/regra.jpg" alt="">
+                        <div class="card-trending__body"><h4>Novas regras são aprovadas para 2026</h4><p>Federação anuncia mudanças no formato de disputa do campeonato.</p></div>
+                    </a>
+                    <a href="#" class="card-trending">
+                        <img class="card-trending__img" src="IMG/japa.png" alt="">
+                        <div class="card-trending__body"><h4>Japão anuncia convocação oficial</h4><p>Lista com 18 atletas foi divulgada nesta manhã pela federação.</p></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+      <!--  ARENA AO VIVO FEITA COMA AJUDA DE Three.js -->
+        <section class="arena-section" id="arena">
+
+            <div class="arena-header">
+                <span class="arena-tag">TRANSMISSÃO AO VIVO</span>
+                <h2>ARENA MUNDIAL <span>PPT 2026</span></h2>
+                <p>Assista as partidas em tempo real e participe jogando contra nosso campeão virtual</p>
+            </div>
+
+            <div id="arena-container">
+                <canvas id="arena-canvas"></canvas>
+
+
+
+
+                <!-- HUD -->
+                <div id="hud">
+                    <div id="top-bar">
+                        <div class="live-badge"><div class="live-dot"></div> AO VIVO</div>
+                        <div id="top-title">WORLD CHAMPIONSHIP PPT 2026</div>
+                        <div id="viewers">👁 <span id="viewer-count">14.382</span> assistindo</div>
+                    </div>
+
+                    <div id="scoreboard">
+                        <div class="player-score">
+                            <div class="player-name">João Silva</div>
+
+                            <div class="player-country">🇧🇷</div>
+
+                            <div class="player-pts" id="score-p1">0</div>
+                        </div>
+                        <div class="vs-box">VS</div>
+                        <div class="player-score">
+                            <div class="player-name">Kenji Mori</div>
+
+                            <div class="player-country">🇯🇵</div>
+
+                            <div class="player-pts" id="score-p2">0</div>
+                        </div>
+                    </div>
+
+                    <div style="flex:1"></div>
+                </div>
+
+                <div id="round-label">ROUND 1 • MELHOR DE 5</div>
+                <div id="result-msg"></div>
+
+                <div id="chat-panel">
+                    <div id="chat-title">💬 CHAT AO VIVO</div>
+                    <div id="chat-messages"></div>
+                </div>
+
+                <div id="bottom-controls">
+                    <p id="play-label">ESCOLHA SUA JOGADA:</p>
+                    <div id="move-buttons">
+                        <button class="move-btn" onclick="arenaPlay('pedra')">✊<span>PEDRA</span></button>
+                        <button class="move-btn" onclick="arenaPlay('papel')">🖐<span>PAPEL</span></button>
+                        <button class="move-btn" onclick="arenaPlay('tesoura')">✌<span>TESOURA</span></button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+        <!-- FORMULÁRIO -->
         <section class="formulario" id="formulario">
+            <div class="form__inner">
+                <div class="form__info">
+                    
+                    <h2 class="form__titulo">GARANTA SUA <span>VAGA</span> NO CAMPEONATO</h2>
+                    <p class="form__desc">Preencha o formulário e faça parte do maior campeonato mundial de Pedra, Papel e Tesoura. Vagas limitadas!</p>
+                    <ul class="form__beneficios">
+                <li> Acesso a todas as fases do campeonato</li>
+                <li> Kit oficial do competidor</li>
+                <li> Certificado de participação</li>
+                <li> Chance de ganhar o título mundial</li>
+                    </ul>
+                </div>
+                <div class="form-card">
+                    <div class="form-header">
+                        <h3>Ficha de Inscrição</h3>
+                        <p>2026 World Championship</p>
+                    </div>
+                    <div class="form-card-body">
+                        <div class="camp-grupo">
+                            <label for="nome">Nome Completo </label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="camp-grupo">
+                            <label for="email">E-mail </label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com">
+                        </div>
+                        <div class="camp-grupo">
+                            <label for="telefone">Telefone </label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="+55 (00) 00000-0000">
+                        </div>
+                        <div class="camp-linha">
+                            <div class="camp-grupo">
+                                <label for="pais">País </label>
+                                <select id="pais" name="pais">
+                                    <option value="" disabled selected>Selecione</option>
 
-    <div class="formulario__inner">
+                                    <option value="BR">🇧🇷 Brasil</option>
 
-   
-    <div class="formulario__info">
+                                    <option value="US">🇺🇸 EUA</option>
 
-      <span class="formulario__tag">INSCRIÇÕES ABERTAS</span>
+                                    <option value="JP">🇯🇵 Japão</option>
 
-      <h2 class="formulario__titulo">
+                                    <option value="DE">🇩🇪 Alemanha</option>
 
-        GARANTA SUA <span>VAGA</span> NO CAMPEONATO
-      </h2>
+                                    <option value="FR">🇫🇷 França</option>
 
-      <p class="formulario__desc">
-        Preencha o formulário e faça parte do maior campeonato mundial de Pedra, Papel e Tesoura. Vagas limitadas!
-      </p>
+                                    <option value="KR">🇰🇷 Coreia do Sul</option>
 
-      <ul class="formulario__beneficios">
-        <li>
-          <span class="icone"></span>
+                                    <option value="AR">🇦🇷 Argentina</option>
 
-          Acesso a todas as fases do campeonato
+                                    <option value="outro">Outro</option>
+                                </select>
+                            </div>
+                            <div class="camp-grupo">
+                                <label for="categoria">Categoria *</label>
 
-        </li>
-        <li>
-          <span class="icone"></span>
+                                <select id="categoria" name="categoria">
 
-          Kit oficial do competidor
+                                    <option value="" disabled selected>Selecione</option>
 
-        </li>
-        <li>
-          <span class="icone"></span>
+                                    <option value="amador">Amador</option>
 
-          Certificado de participação
+                                    <option value="semi">Semi-profissional</option>
 
-        </li>
-        <li>
-          <span class="icone"></span>
+                                    <option value="profissional">Profissional</option>
 
-          Chance de ganhar o título mundial
-
-        </li>
-      </ul>
-
-    </div>
-
-  
-    <div class="form-card">
-
-      <div class="form-header">
-        <h3>Ficha de Inscrição</h3>
-
-        <p>2026 World Championship</p>
-
-      </div>
-
-      <div class="form-card-body">
-
-        <div class="camp-grupo">
-
-          <label for="nome">Nome Completo *</label>
-
-          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo">
-        </div>
-
-        <div class="camp-grupo">
-
-          <label for="email">E-mail *</label>
-
-          <input type="email" id="email" name="email" placeholder="seu@email.com">
-        </div>
-
-        <div class="camp-grupo">
-
-          <label for="telefone">Telefone *</label>
-
-          <input type="tel" id="telefone" name="telefone" placeholder="+55 (00) 00000-0000">
-        </div>
-
-        <div class="camp-linha">
-
-          <div class="camp-grupo">
-            <label for="pais">País *</label>
-
-            <select id="pais" name="pais">
-
-              <option value="" disabled selected>Selecione</option>
-
-              <option value="BR"> Brasil</option>
-
-              <option value="US">EUA</option>
-
-              <option value="JP"> Japão</option>
-
-              <option value="DE"> Alemanha</option>
-
-              <option value="FR"> França</option>
-
-              <option value="KR"> Coreia do Sul</option>
-
-              <option value="AR"> Argentina</option>
-
-              <option value="outro">Outro</option>
-            </select>
-          </div>
-
-          <div class="camp-grupo">
-            <label for="categoria">Categoria *</label>
-
-            <select id="categoria" name="categoria">
-
-              <option value="" disabled selected>Selecione</option>
-
-              <option value="amador">Amador</option>
-
-              <option value="semi">Semi-profissional</option>
-
-              <option value="profissional">Profissional</option>
-
-              <option value="elite">Elite Mundial</option>
-            </select>
-          </div>
-
-        </div>
-
-        <div class="camp-grupo camp-check">
-          <input type="checkbox" id="termos" name="termos">
-          <label for="termos">Concordo com os <a href="#">termos e condições</a> do campeonato</label>
-        </div>
-
-        <button type="submit" class="btn-inscrever">
-
-          INSCREVER-SE AGORA
-
-          <span class="arrow">→</span>
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-
+                                    <option value="elite">Elite Mundial</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="camp-grupo camp-check">
+                            <input type="checkbox" id="termos" name="termos">
+                            <label for="termos">Concordo com os <a href="#">termos e condições</a> do campeonato</label>
+                        </div>
+                        <button type="submit" class="btn-inscrever" id="btn-inscrever">
+                            INSCREVER-SE AGORA <span class="arrow">→</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </section>
-     
 
+    </main>
 
-        
-
-
-        </main>
-
-      
-
-
-
-
-
-        <!-- PARTE FINAL OU FOOTER(RODAPE) -->
-
+    <!-- FOOTER -->
     <footer class="rodape" id="contato">
         <div class="colunas">
             <div class="coluna">
@@ -630,12 +412,10 @@
                     <button>ENVIAR</button>
                 </div>
             </div>
-
             <div class="coluna">
                 <h4>SIGA-NOS</h4>
                 <p>Instagram | YouTube | Twitter | Facebook</p>
             </div>
-
             <div class="coluna">
                 <h4>INFORMAÇÕES</h4>
                 <a href="#">Sobre o Campeonato</a><br>
@@ -644,26 +424,367 @@
 
                 <a href="#">Perguntas Frequentes</a>
             </div>
-
             <div class="coluna">
                 <h4>CONTATO</h4>
 
                 <p>contato@mundialppt.com</p>
-
+                
                 <p>+55 13 99767-6742</p>
             </div>
         </div>
-
         <div class="direitos">
             <p>&copy; 2026 Campeonato Mundial de Pedra, Papel e Tesoura.</p>
-
             <p><a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a></p>
         </div>
     </footer>
 
-<script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.97/build/spline-viewer.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.97/build/spline-viewer.js"></script>
+
+    
+
+    <script>
+        
+
+
+        // arena seção ou java scripit com ajuda do three.js
+
+
+    const topo = document.getElementById('topo');
+    const sections = document.querySelectorAll('section[id], div[id]');
+    const menuLinks = document.querySelectorAll('.menu a');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 60) {
+            topo.style.background = 'rgba(11,20,38,0.99)';
+            topo.style.boxShadow = '0 4px 30px rgba(0,0,0,0.4)';
+        } else {
+            topo.style.background = 'rgba(11,20,38,0.92)';
+            topo.style.boxShadow = '0 8px 25px rgba(0,0,0,0.25)';
+        }
+
+        let current = '';
+        sections.forEach(sec => {
+            if (window.scrollY >= sec.offsetTop - 120) current = sec.id;
+        });
+
+        menuLinks.forEach(link => {
+            link.classList.remove('ativo');
+            if (link.getAttribute('href') === '#' + current) link.classList.add('ativo');
+        });
+    });
+
+
+
+
+//   ENTRADA DAS SEÇÕES COM ANIMAÇÃO
+    const revealEls = document.querySelectorAll('.box, .avaliacao-item, .card-trending, .lateral-item, .stat, .quem-somos-imagem, .form-card');
+
+    revealEls.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }, i * 80);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    revealEls.forEach(el => observer.observe(el));
+
+
+
+
+
+
+
+
+
+//     CONTADOR ANIMADO nos números da seção avaliações
+
+    const counterEls = document.querySelectorAll('.avaliacao-item');
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) return;
+            const el = entry.target;
+            const num = parseInt(el.dataset.count);
+            const suffix = el.dataset.suffix || '';
+            const display = el.querySelector('.counter-num');
+            const prefix = el === counterEls[0] ? '$' : '';
+            let start = 0;
+            const duration = 1800;
+            const step = Math.ceil(num / (duration / 16));
+
+            const timer = setInterval(() => {
+                start += step;
+                if (start >= num) { start = num; clearInterval(timer); }
+                display.textContent = prefix + start.toLocaleString('pt-BR') + suffix;
+            }, 16);
+
+            counterObserver.unobserve(el);
+        });
+    }, { threshold: 0.5 });
+
+    counterEls.forEach(el => counterObserver.observe(el));
+
+
+
+
+    // FORMULÁRIO 
+
+
+    const btnInscrever = document.getElementById('btn-inscrever');
+    if (btnInscrever) {
+        btnInscrever.addEventListener('click', (e) => {
+            e.preventDefault();
+            const nome = document.getElementById('nome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+            const pais = document.getElementById('pais').value;
+            const categoria = document.getElementById('categoria').value;
+            const termos = document.getElementById('termos').checked;
+
+            if (!nome || !email || !telefone || !pais || !categoria || !termos) {
+                btnInscrever.style.background = '#ef4444';
+                btnInscrever.textContent = '⚠ PREENCHA TODOS OS CAMPOS!';
+                setTimeout(() => {
+                    btnInscrever.style.background = '';
+                    btnInscrever.innerHTML = 'INSCREVER-SE AGORA <span class="arrow">→</span>';
+                }, 2500);
+                return;
+            }
+
+            btnInscrever.style.background = '#22c55e';
+            btnInscrever.innerHTML = '✓ INSCRITO COM SUCESSO!';
+            btnInscrever.disabled = true;
+        });
+    }
+
+
+
+
+
+        //   ARENA 3D
+    (function initArena() {
+        const canvas = document.getElementById('arena-canvas');
+        if (!canvas || typeof THREE === 'undefined') return;
+
+        const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.setSize(canvas.parentElement.clientWidth, canvas.parentElement.clientHeight);
+        renderer.shadowMap.enabled = true;
+
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0x05080f);
+        scene.fog = new THREE.Fog(0x05080f, 18, 42);
+
+        const camera = new THREE.PerspectiveCamera(55, canvas.parentElement.clientWidth / canvas.parentElement.clientHeight, 0.1, 100);
+        camera.position.set(0, 5, 12);
+        camera.lookAt(0, 0, 0);
+
+        scene.add(new THREE.AmbientLight(0x1a2a4a, 1.5));
+
+        const blueLight = new THREE.PointLight(0x3b82f6, 3, 20);
+        blueLight.position.set(0, 6, 0);
+        scene.add(blueLight);
+
+        const redLight = new THREE.PointLight(0xff2222, 2, 15);
+        redLight.position.set(-5, 3, 0);
+        scene.add(redLight);
+
+        const greenLight = new THREE.PointLight(0x22c55e, 2, 15);
+        greenLight.position.set(5, 3, 0);
+        scene.add(greenLight);
+
+        const floor = new THREE.Mesh(
+            new THREE.CircleGeometry(10, 64),
+            new THREE.MeshStandardMaterial({ color: 0x0a0f1a, roughness: 0.9 })
+        );
+        floor.rotation.x = -Math.PI / 2;
+        floor.position.y = -1.5;
+        scene.add(floor);
+
+        const ring = new THREE.Mesh(
+            new THREE.RingGeometry(4.8, 5, 64),
+            new THREE.MeshBasicMaterial({ color: 0x3b82f6, side: THREE.DoubleSide })
+        );
+        ring.rotation.x = -Math.PI / 2;
+        ring.position.y = -1.49;
+        scene.add(ring);
+
+        function makeScreen(w, h, color, x, y, z, ry) {
+            const g = new THREE.Group();
+            g.add(new THREE.Mesh(new THREE.BoxGeometry(w+0.2, h+0.2, 0.1), new THREE.MeshStandardMaterial({ color: 0x111827 })));
+            const screen = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 0.4 }));
+            screen.position.z = 0.06;
+            g.add(screen);
+            g.position.set(x, y, z);
+            g.rotation.y = ry;
+            return g;
+        }
+
+        scene.add(makeScreen(4, 2, 0x1e3a5f, 0, 2, -7, 0));
+        scene.add(makeScreen(2, 1.2, 0x1a2a1a, -7, 2, 0, Math.PI/2));
+        scene.add(makeScreen(2, 1.2, 0x1a1a2a, 7, 2, 0, -Math.PI/2));
+
+        function makeStand(x, z, ry) {
+            const g = new THREE.Group();
+            for (let r = 0; r < 3; r++) {
+                const row = new THREE.Mesh(new THREE.BoxGeometry(3.5, 0.3, 0.8), new THREE.MeshStandardMaterial({ color: 0x1e293b }));
+                row.position.set(0, r * 0.5, r * 0.5);
+                g.add(row);
+                for (let s = 0; s < 8; s++) {
+                    const seat = new THREE.Mesh(new THREE.BoxGeometry(0.3, 0.3, 0.3), new THREE.MeshStandardMaterial({ color: Math.random() > 0.3 ? 0x1e40af : 0x374151 }));
+                    seat.position.set(-1.6 + s * 0.47, 0.3, r * 0.5 + 0.1);
+                    g.add(seat);
+                }
+            }
+            g.position.set(x, -1.5, z);
+            g.rotation.y = ry;
+            return g;
+        }
+
+        scene.add(makeStand(0, -8.5, 0));
+        scene.add(makeStand(0,  8.5, Math.PI));
+        scene.add(makeStand(-8.5, 0, Math.PI/2));
+        scene.add(makeStand( 8.5, 0, -Math.PI/2));
+
+        function makePlayer(x, color) {
+            const g = new THREE.Group();
+            const body = new THREE.Mesh(new THREE.CylinderGeometry(0.3, 0.35, 1.2, 8), new THREE.MeshStandardMaterial({ color }));
+            const head = new THREE.Mesh(new THREE.SphereGeometry(0.28, 12, 12), new THREE.MeshStandardMaterial({ color: 0xf5d0a9 }));
+            head.position.y = 0.85;
+            const arm = new THREE.Mesh(new THREE.CylinderGeometry(0.1, 0.1, 0.7, 8), new THREE.MeshStandardMaterial({ color }));
+            arm.rotation.z = x > 0 ? Math.PI/3 : -Math.PI/3;
+            arm.position.set(x > 0 ? -0.4 : 0.4, 0.2, 0);
+            g.add(body); g.add(head); g.add(arm);
+            g.position.set(x, -0.9, 0);
+            return g;
+        }
+
+        const p1 = makePlayer(-2.5, 0x1e40af);
+        const p2 = makePlayer(2.5, 0x7f1d1d);
+        scene.add(p1); scene.add(p2);
+
+        const pillarMat = new THREE.MeshStandardMaterial({ color: 0x0f172a });
+        [-6,-3,3,6].forEach(x => {
+            const pillar = new THREE.Mesh(new THREE.CylinderGeometry(0.2, 0.2, 6, 8), pillarMat);
+            pillar.position.set(x, 1.5, -7.5);
+            scene.add(pillar);
+            const light = new THREE.Mesh(new THREE.SphereGeometry(0.15), new THREE.MeshBasicMaterial({ color: 0x3b82f6 }));
+            light.position.set(x, 4.6, -7.5);
+            scene.add(light);
+        });
+
+        let angle = 0;
+        function animate() {
+            requestAnimationFrame(animate);
+            angle += 0.004;
+            camera.position.x = Math.sin(angle) * 12;
+            camera.position.z = Math.cos(angle) * 12;
+            camera.lookAt(0, 0.5, 0);
+            blueLight.intensity = 2.5 + Math.sin(Date.now() * 0.003) * 0.5;
+            p1.rotation.y = angle * 2;
+            p2.rotation.y = -angle * 2;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener('resize', () => {
+            const w = canvas.parentElement.clientWidth;
+            const h = canvas.parentElement.clientHeight;
+            renderer.setSize(w, h);
+            camera.aspect = w / h;
+            camera.updateProjectionMatrix();
+        });
+
+        const chatNames = ['🇧🇷 Bia', '🇯🇵 Hiro', '🇺🇸 Jake', '🇩🇪 Hans', '🇰🇷 Min', '🇫🇷 Marie', '🇦🇷 Leo'];
+        const chatMsgs = ['Vai Brasil!!', 'Go Kenji!!!', 'Que partida!', 'INCRÍVEL!', 'PPT WORLD!', 'Pedra agora!', 'TESOURA!!!', 'Que tensão!', 'Melhora 2026!'];
+
+        function addChat(user, text) {
+            const box = document.getElementById('chat-messages');
+            if (!box) return;
+            const div = document.createElement('div');
+            div.className = 'chat-msg';
+            div.innerHTML = `<span class="chat-user">${user}</span> <span class="chat-text">${text}</span>`;
+            box.appendChild(div);
+            box.scrollTop = box.scrollHeight;
+            if (box.children.length > 35) box.removeChild(box.firstChild);
+        }
+
+        setInterval(() => {
+            addChat(chatNames[Math.floor(Math.random() * chatNames.length)], chatMsgs[Math.floor(Math.random() * chatMsgs.length)]);
+        }, 1800);
+
+        let viewers = 14382;
+        setInterval(() => {
+            viewers += Math.floor(Math.random() * 25) - 8;
+            const el = document.getElementById('viewer-count');
+            if (el) el.textContent = viewers.toLocaleString('pt-BR');
+        }, 3000);
+    })();
+
+
+
+    // LOGICA DO GAME
+    let scoreP1 = 0, scoreP2 = 0, round = 1, playing = false;
+    const moves = ['pedra', 'papel', 'tesoura'];
+    const emoji = { pedra: '✊', papel: '🖐', tesoura: '✌' };
+    const beats = { pedra: 'tesoura', papel: 'pedra', tesoura: 'papel' };
+
+    function addArenaChat(user, text) {
+        const box = document.getElementById('chat-messages');
+        if (!box) return;
+        const div = document.createElement('div');
+        div.className = 'chat-msg';
+        div.innerHTML = `<span class="chat-user">${user}</span> <span class="chat-text">${text}</span>`;
+        box.appendChild(div);
+        box.scrollTop = box.scrollHeight;
+    }
+
+    window.arenaPlay = function(playerMove) {
+        if (playing) return;
+        playing = true;
+
+        const aiMove = moves[Math.floor(Math.random() * 3)];
+        const msg = document.getElementById('result-msg');
+        let result = '';
+
+        if (playerMove === aiMove) {
+            result = `${emoji[playerMove]} EMPATE! ${emoji[aiMove]}`;
+            msg.style.borderColor = '#f59e0b';
+        } else if (beats[playerMove] === aiMove) {
+            result = `${emoji[playerMove]} VOCÊ VENCEU! 🎉`;
+            msg.style.borderColor = '#22c55e';
+            scoreP1++;
+            document.getElementById('score-p1').textContent = scoreP1;
+        } else {
+            result = `${emoji[aiMove]} KENJI VENCEU!`;
+            msg.style.borderColor = '#ef4444';
+            scoreP2++;
+            document.getElementById('score-p2').textContent = scoreP2;
+        }
+
+        msg.textContent = result;
+        msg.style.display = 'block';
+        addArenaChat('Sistema 🎯', result);
+
+        setTimeout(() => {
+            msg.style.display = 'none';
+            playing = false;
+            round++;
+            const rl = document.getElementById('round-label');
+            if (rl) rl.textContent = `ROUND ${round} • MELHOR DE 5`;
+        }, 2200);
+    };
+    </script>
+
 </body>
 </html>
-
-
-
